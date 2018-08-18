@@ -1,0 +1,27 @@
+.container {
+    margin: 20px;
+}
+
+a {
+    margin: 5px;
+}
+
+.landing {
+    margin: 10px;
+}
+
+.list-group-item:hover {
+    background-color: lightblue;
+}
+
+.list-group-item:focus {
+    background-color: lightblue;
+}
+
+.game-desc {
+    color: gray;
+}
+
+.title {
+    text-align: center; 
+}

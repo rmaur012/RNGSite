@@ -1,0 +1,45 @@
+<div class="container profile-whole">
+    <div class="section profile-block">
+        <div>
+            <span class="big-username">
+                <button type="button" role="button" class="btn btn-outline-primary edit-profile" [disabled]="    cheerButtonPressed" (click)="cheerOn()">Cheer!</button>
+                <h1>{{username}}'s Profile</h1>
+            </span>
+        </div>
+    </div>
+    <div class="section profile-block">
+        <div class="row main-info">
+            <h3>Username: <span class="user-specific">{{username}}</span></h3>
+        </div>
+        <div class="row main-info">
+            <h3>Lever Score: <span class="user-specific">{{leverScore}}</span></h3>
+        </div>
+        <div class="row main-info">
+            <h3>Cheers: <span class="user-specific">{{cheerCount}}</span></h3>
+        </div>
+    </div>
+    <div class="section profile-block">
+        <div class="row main-info stat-block">
+            <h4>Lever Stats</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Round 1</th>
+                        <th scope="col">Round 2</th>
+                        <th scope="col">Round 3</th>
+                        <th scope="col">Round 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{leverStats.round1}}</td>
+                        <td>{{leverStats.round2}}</td>
+                        <td>{{leverStats.round3}}</td>
+                        <td>{{leverStats.round4}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+    </div>
+</div>
